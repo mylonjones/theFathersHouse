@@ -1,5 +1,6 @@
 
 @import './home';
+@import './info';
 
 html, body, #root, .App {
   height: 100%;
@@ -12,7 +13,7 @@ html, body, #root, .App {
 
 .App {
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   height: fit-content;
 
 }
@@ -55,11 +56,20 @@ nav {
 .footer {
   background-color: white;
   color: black;
-  padding: 30px;
+  padding: 10px;
   font-weight: bold;
   font-size: large;
 
   width: 100%;
   position: fixed;
   bottom: 0px;
+}
+
+.copyButton {
+  visibility: hidden;
+  margin-left: 5px;
+}
+
+.footerLink {
+  color: black;
 }

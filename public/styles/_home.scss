@@ -64,10 +64,14 @@
 }
 
 .modal {
-  background: rgba(128, 128, 128, 0.527);
+  display: none;
 }
 
 .show {
+  display: block;
+}
+
+.grayout {
   z-index: 1;
   background: rgba(128, 128, 128, 0.527);
   position: fixed;
@@ -76,4 +80,16 @@
   bottom: 0;
   right: 0;
   overflow-y: hidden;
+}
+
+.signUpForm {
+  z-index: 2;
+  position: fixed;
+  bottom: 50%;
+  right: calc(50% - 166px);
+  background-color: white;
+  padding: 30px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  width: 300px;
 }
