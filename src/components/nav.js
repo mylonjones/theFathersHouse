@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   return(
-    <nav className='navBar'>
+    <nav className='navBar space'>
       <img
         className='logo'
         src='photos/logo.png'

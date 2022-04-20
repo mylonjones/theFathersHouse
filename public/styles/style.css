@@ -1,17 +1,4 @@
-/** Home Page Style */
-.home {
-  width: 95%;
-  margin: auto;
-}
-
-.video {
-  border: none;
-  width: 500px;
-  height: 280px;
-  margin: auto;
-}
-
-.title-container {
+.titleContainer {
   background-image: url("../photos/church.jpeg");
   background-repeat: no-repeat;
   padding: 80px 0;
@@ -20,7 +7,7 @@
   background-position: center bottom -60px;
 }
 
-.title {
+.titleContainer .title {
   text-align: center;
   font-size: 35px;
   font-weight: bold;
@@ -30,12 +17,7 @@
   background-color: rgba(204, 204, 204, 0.57);
 }
 
-.subTitle {
-  text-align: center;
-  font-size: small;
-}
-
-.spacer {
+.welcomeVideo {
   text-align: center;
   font-weight: bold;
   font-size: large;
@@ -45,7 +27,14 @@
   border-bottom: 1px solid black;
 }
 
-.spacer2 {
+.welcomeVideo .video {
+  border: none;
+  width: 500px;
+  height: 280px;
+  margin: auto;
+}
+
+.signUp {
   text-align: center;
   font-weight: bold;
   font-size: large;
@@ -55,20 +44,20 @@
   margin-bottom: 50px;
 }
 
-.signUp {
+.signUp .signUpButton {
   margin-top: 20px;
   padding: 10px;
 }
 
-.modal {
+.signUp .modal {
   display: none;
 }
 
-.show {
+.signUp .show {
   display: block;
 }
 
-.grayout {
+.signUp .grayout {
   z-index: 1;
   background: rgba(128, 128, 128, 0.527);
   position: fixed;
@@ -79,7 +68,7 @@
   overflow-y: hidden;
 }
 
-.signUpForm {
+.signUp .signUpForm {
   z-index: 2;
   position: fixed;
   bottom: 50%;
@@ -91,9 +80,15 @@
   width: 300px;
 }
 
-.info {
-  width: 95%;
-  margin: auto;
+.signUp .signUpForm .signUpSubmission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
 .infoMessage {
@@ -178,7 +173,23 @@ html, body, #root, .App {
   height: fit-content;
 }
 
-.navLinks {
+.space {
+  width: 95%;
+  margin: auto;
+}
+
+.navBar {
+  border-bottom: 1px solid black;
+  background-color: inherit;
+  overflow: hidden;
+}
+
+.navBar .logo {
+  float: left;
+  padding: 10px;
+}
+
+.navBar .navLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,23 +198,7 @@ html, body, #root, .App {
           justify-content: flex-end;
 }
 
-.navBar {
-  width: 95%;
-  margin: auto;
-  border-bottom: 1px solid black;
-}
-
-nav {
-  background-color: inherit;
-  overflow: hidden;
-}
-
-.logo {
-  float: left;
-  padding: 10px;
-}
-
-.navLink {
+.navBar .navLinks .navLink {
   color: inherit;
   margin-top: 30px;
   float: right;
@@ -213,7 +208,7 @@ nav {
   font-size: 17px;
 }
 
-.navLink:hover {
+.navBar .navLinks .navLink:hover {
   color: black;
 }
 
@@ -228,12 +223,8 @@ nav {
   bottom: 0px;
 }
 
-.copyButton {
+.footer .copyButton {
   visibility: hidden;
   margin-left: 5px;
-}
-
-.footerLink {
-  color: black;
 }
 /*# sourceMappingURL=style.css.map */

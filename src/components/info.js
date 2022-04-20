@@ -9,9 +9,10 @@ const lorem = new LoremIpsum({
 
 export default function Info() {
   return (
-    <div className='info'>
+    <div className='space'>
       <div className='infoMessage' >Learn about our church and leaders!</div>
       <div>
+
         <div className='mainInfo split'>
           <img
             className='photo'
@@ -23,6 +24,7 @@ export default function Info() {
             {lorem.generateParagraphs(1)}
           </div>
         </div>
+
         <div className='basicInfo' >
           We are located at 2850 B sreet Rosamond Ca, 93560
           <br/>
@@ -32,6 +34,7 @@ export default function Info() {
           <br/>
           Or by email at: resources@befitness.com
         </div>
+
         <div className='subInfo split'>
           <img
             className='photo'
@@ -43,6 +46,7 @@ export default function Info() {
             {lorem.generateParagraphs(1)}
           </div>
         </div>
+
         <div className='subInfo split'>
           <img
             className='photo'
@@ -54,6 +58,7 @@ export default function Info() {
             {lorem.generateParagraphs(1)}
           </div>
         </div>
+
       </div>
     </div>
   )

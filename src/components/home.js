@@ -1,56 +1,6 @@
 import React, {useState} from 'react';
-// import { LoremIpsum } from "lorem-ipsum";
-
-// const lorem = new LoremIpsum({
-//   sentencesPerParagraph: { max: 7, min: 4 },
-//   wordsPerSentence: { max: 10, min: 4 }
-// });
-
-
-
-
-const showDialog = () => {
-  const modals = document.getElementsByClassName('modal')
-  for(let modal of modals) modal.classList.add('show')
-  const scrollY = window.scrollY;
-  const body = document.body;
-  body.style.position = 'fixed';
-  body.style.top = `-${scrollY}px`;
-};
-
-const closeDialog = () => {
-  const body = document.body;
-  const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
-  const modals = document.getElementsByClassName('modal')
-  for(let modal of modals) modal.classList.remove('show');
-}
-
-
 
 export default function Home() {
-
-  const [modalContent, setContent] = useState(
-    <form onSubmit={(e)=>{submitHandler(e)}} >
-      <label>
-        Name:
-        <input type='text' ></input>
-      </label>
-      <br/>
-      <br/>
-      <label>
-        Email:
-        <input type='text' ></input>
-      </label>
-      <br/>
-      <br/>
-      <label>
-        <input type='submit' value='sign up' ></input>
-      </label>
-    </form>
-  )
 
   const submitHandler = (e) => {
     e.preventDefault()
@@ -62,29 +12,70 @@ export default function Home() {
     )
   }
 
-  return (
-    <div className='home'>
-      <div className='dashPartition'>
-        <div className='title-container'>
-          <div className='title'>The Father's House</div>
-        </div>
+  const [modalContent, setContent] = useState(
+    <form
+    className='signUpSubmission'
+    onSubmit={submitHandler} >
+      <label>
+        Name:
+        <input type='text' />
+      </label>
+      <label>
+        Email:
+        <input type='text' />
+      </label>
+      <label>
+        <input
+          type='submit'
+          value='sign up' />
+      </label>
+    </form>
+  )
 
-        <div className='spacer' >
-          <iframe
-          className='video'
-          title='welcome'
-          src={`//www.youtube.com/embed/RSe4mjqmwsQ`}
-          ></iframe>
-        </div>
+  const showDialog = () => {
+    const modals = document.getElementsByClassName('modal')
+    for(let modal of modals) modal.classList.add('show')
+    const scrollY = window.scrollY;
+    const body = document.body;
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollY}px`;
+  };
+
+  const closeDialog = () => {
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    const modals = document.getElementsByClassName('modal')
+    for(let modal of modals) modal.classList.remove('show');
+  }
+
+  return (
+    <div className='home space'>
+
+      <div className='titleContainer'>
+        <div className='title'>The Father's House</div>
       </div>
 
-      <div className='spacer2'>
+      <div className='welcomeVideo' >
+        <iframe
+        className='video'
+        title='welcome'
+        src={`//www.youtube.com/embed/RSe4mjqmwsQ`}
+        ></iframe>
+      </div>
+
+      <div className='signUp'>
+
         <div>Click here to sigh up for our news letter!</div>
-        <button className='signUp' onClick={showDialog} >Sign Up!</button>
-          <div className='grayout modal' onClick={closeDialog} ></div>
-          <div className='signUpForm modal' >
-            {modalContent}
-          </div>
+        <button className='signUpButton' onClick={showDialog} >Sign Up!</button>
+
+        <div className='grayout modal' onClick={closeDialog} ></div>
+        <div className='signUpForm modal' >
+          {modalContent}
+        </div>
+
       </div>
 
     </div>

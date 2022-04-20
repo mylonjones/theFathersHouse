@@ -1,19 +1,5 @@
 
-/** Home Page Style */
-
-.home {
-  width: 95%;
-  margin: auto;
-}
-
-.video {
-  border: none;
-  width: 500px;
-  height: 280px;
-  margin: auto;
-}
-
-.title-container {
+.titleContainer {
   background-image: url("../photos/church.jpeg");
   background-repeat: no-repeat;
   padding: 80px 0;
@@ -21,24 +7,18 @@
   background-size: 100%;
   background-position: center bottom -60px;
 
+  .title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    height: 80px;
+    line-height: 80px;
+    background-color: rgba(204, 204, 204, .57);
+  }
 }
 
-.title {
-  text-align: center;
-  font-size: 35px;
-  font-weight: bold;
-  color: black;
-  height: 80px;
-  line-height: 80px;
-  background-color: rgba(204, 204, 204, .57);
-}
-
-.subTitle {
-  text-align: center;
-  font-size: small;
-}
-
-.spacer {
+.welcomeVideo {
   text-align: center;
   font-weight: bold;
   font-size: large;
@@ -46,9 +26,15 @@
   margin: 25px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  .video {
+    border: none;
+    width: 500px;
+    height: 280px;
+    margin: auto;
+  }
 }
 
-.spacer2 {
+.signUp {
   text-align: center;
   font-weight: bold;
   font-size: large;
@@ -56,40 +42,42 @@
   background-color: white;
   margin-top: 20px;
   margin-bottom: 50px;
-}
+  .signUpButton {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .modal {
+    display: none;
+  }
 
-.signUp {
-  margin-top: 20px;
-  padding: 10px;
-}
+  .show {
+    display: block;
+  }
+  .grayout {
+    z-index: 1;
+    background: rgba(128, 128, 128, 0.527);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    right: 0;
+    overflow-y: hidden;
+  }
 
-.modal {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.grayout {
-  z-index: 1;
-  background: rgba(128, 128, 128, 0.527);
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  bottom: 0;
-  right: 0;
-  overflow-y: hidden;
-}
-
-.signUpForm {
-  z-index: 2;
-  position: fixed;
-  bottom: 50%;
-  right: calc(50% - 166px);
-  background-color: white;
-  padding: 30px;
-  border: 2px solid gray;
-  border-radius: 20px;
-  width: 300px;
+  .signUpForm {
+    z-index: 2;
+    position: fixed;
+    bottom: 50%;
+    right: calc(50% - 166px);
+    background-color: white;
+    padding: 30px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 300px;
+    .signUpSubmission {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
 }

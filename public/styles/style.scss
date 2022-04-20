@@ -18,39 +18,35 @@ html, body, #root, .App {
 
 }
 
-.navLinks {
-  display: flex;
-  justify-content: flex-end;
+.space {
+  width: 95%;
+  margin: auto;
 }
 
 .navBar {
-  width: 95%;
-  margin: auto;
   border-bottom: 1px solid black;
-}
-
-nav {
   background-color: inherit;
   overflow: hidden;
-}
-
-.logo {
-  float: left;
-  padding: 10px;
-}
-
-.navLink {
-  color: inherit;
-  margin-top: 30px;
-  float: right;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navLink:hover {
-  color: black;
+  .logo {
+    float: left;
+    padding: 10px;
+  }
+  .navLinks {
+    display: flex;
+    justify-content: flex-end;
+    .navLink {
+      color: inherit;
+      margin-top: 30px;
+      float: right;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      &:hover {
+        color: black;
+      }
+    }
+  }
 }
 
 .footer {
@@ -59,17 +55,13 @@ nav {
   padding: 10px;
   font-weight: bold;
   font-size: large;
-
   width: 100%;
   position: fixed;
   bottom: 0px;
+  .copyButton {
+    visibility: hidden;
+    margin-left: 5px;
+  }
 }
 
-.copyButton {
-  visibility: hidden;
-  margin-left: 5px;
-}
 
-.footerLink {
-  color: black;
-}
