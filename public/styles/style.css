@@ -97,7 +97,6 @@
   width: 700px;
   margin: 50px auto;
   padding: 30px 0;
-  color: #884c4c;
   font-size: x-large;
 }
 
@@ -118,7 +117,6 @@
   margin: auto;
   padding: 20px 0;
   line-height: 1.5;
-  color: #903f3f;
 }
 
 .split {
@@ -130,7 +128,7 @@
   margin: 50px auto;
 }
 
-.photo {
+.split .photo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: left;
@@ -140,7 +138,7 @@
   height: 100%;
 }
 
-.content {
+.split .content {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: right;
@@ -150,10 +148,62 @@
   background-color: #cacaca;
 }
 
-.bold {
+.split .content .bold {
   font-weight: bold;
   color: white;
   font-size: 30px;
+}
+
+.blog {
+  background-color: #cacaca;
+}
+
+.blog .blogHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 15px;
+  padding: 30px 15px 20px;
+  border-bottom: 1px solid black;
+}
+
+.blog .blogHeading .blogImage {
+  width: 40vw;
+}
+
+.blog .blogHeading .blogTitle {
+  color: white;
+  font-size: 30px;
+  margin: 20px 40px;
+  font-weight: bold;
+}
+
+.blog .blogHeading .blogAuthor {
+  margin: 20px 40px;
+  font-weight: bold;
+}
+
+.blog .blogContent {
+  margin: 5px 30px;
+  padding-bottom: 15px;
+}
+
+.previewTitle {
+  color: black;
+}
+
+.blogDisplay {
+  padding: 30px;
+  background-color: #cacaca;
+}
+
+.blogPostTitle {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.previewImage {
+  width: 20vw;
 }
 
 html, body, #root, .App {
@@ -162,7 +212,7 @@ html, body, #root, .App {
   margin: 0;
   background-color: #f7f2ea;
   font-family: Arial, Helvetica, sans-serif;
-  color: gray;
+  color: #4e3131;
 }
 
 .App {
@@ -176,6 +226,7 @@ html, body, #root, .App {
 .space {
   width: 95%;
   margin: auto;
+  margin-top: 20px;
 }
 
 .navBar {

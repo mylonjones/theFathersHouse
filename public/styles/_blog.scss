@@ -1,0 +1,46 @@
+
+.blog {
+  background-color: #cacaca;
+  .blogHeading {
+    display: flex;
+    margin: 20px 15px;
+    padding: 30px 15px 20px;
+    border-bottom: 1px solid black;
+
+    .blogImage {
+      width: 40vw;
+    }
+    .blogTitle {
+      color: white;
+      font-size: 30px;
+      margin: 20px 40px;
+      font-weight: bold;
+    }
+    .blogAuthor {
+      margin: 20px 40px;
+      font-weight: bold;
+    }
+  }
+  .blogContent {
+    margin: 5px 30px;
+    padding-bottom: 15px;
+  }
+}
+
+.previewTitle {
+  color: black;
+}
+
+.blogDisplay {
+  padding: 30px;
+  background-color: #cacaca;
+}
+
+.blogPostTitle {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.previewImage {
+  width: 20vw;
+}

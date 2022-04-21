@@ -1,6 +1,7 @@
 
 @import './home';
 @import './info';
+@import './blog';
 
 html, body, #root, .App {
   height: 100%;
@@ -8,7 +9,7 @@ html, body, #root, .App {
   margin: 0;
   background-color: #f7f2ea;
   font-family: Arial, Helvetica, sans-serif;
-  color: gray;
+  color: #4e3131;
 }
 
 .App {
@@ -18,9 +19,12 @@ html, body, #root, .App {
 
 }
 
+
+
 .space {
   width: 95%;
   margin: auto;
+  margin-top: 20px;
 }
 
 .navBar {

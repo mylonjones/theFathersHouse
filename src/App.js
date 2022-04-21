@@ -6,6 +6,7 @@ import Info from './components/info'
 import Media from './components/media'
 import Blog from './components/blog'
 import Footer from './components/footer'
+import BlogPost from './components/blogPost'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='info' element={<Info />} />
         <Route path='blog' element={<Blog />} />
         <Route path='media' element={<Media />} />
+        <Route path='/:slug' element={<BlogPost />} />
       </Routes>
       <Footer />
     </div>
