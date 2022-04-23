@@ -15,24 +15,24 @@ export default function Info() {
 
         <div className='mainInfo split'>
           <img
-            className='photo'
+            className='storyImage'
             src='photos/churchPeople.jpeg'
             alt='couple'
           />
-          <div className='content'>
-            <div className='bold'>{lorem.generateWords(2)}</div>
-            {lorem.generateParagraphs(1)}
-          </div>
+            <div className='bold'>Our Story</div>
+            {lorem.generateParagraphs(3)}
         </div>
 
         <div className='basicInfo' >
           We are located at 2850 B sreet Rosamond Ca, 93560
           <br/>
-          Join us Sunday from 8:30 to 9:45 am
+          Services are Sunday from 8:30 to 9:45 am
           <br/>
           Contact us by phone at: 1-234-567-8910
           <br/>
           Or by email at: resources@befitness.com
+          <br/>
+          Follow us on Face Book: The Father's House
         </div>
 
         <div className='subInfo split'>
@@ -57,6 +57,11 @@ export default function Info() {
             <div className='bold'>{lorem.generateWords(2)}</div>
             {lorem.generateParagraphs(1)}
           </div>
+        </div>
+
+        <div className='mainInfo split' >
+          <div className='bold'>Our Beliefs</div>
+          {lorem.generateParagraphs(3)}
         </div>
 
       </div>

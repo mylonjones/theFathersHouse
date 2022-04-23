@@ -5,16 +5,19 @@
   width: 100%;
   background-size: 100%;
   background-position: center bottom -60px;
+  margin-bottom: 25px;
 }
 
-.titleContainer .title {
+.titleContainer .transparant {
   text-align: center;
+  padding: 30px;
+  background-color: rgba(204, 204, 204, 0.57);
+  color: black;
+}
+
+.titleContainer .transparant .title {
   font-size: 35px;
   font-weight: bold;
-  color: black;
-  height: 80px;
-  line-height: 80px;
-  background-color: rgba(204, 204, 204, 0.57);
 }
 
 .welcomeVideo {
@@ -100,11 +103,6 @@
   font-size: x-large;
 }
 
-.mainInfo {
-  width: 700px;
-  height: 300px;
-}
-
 .subInfo {
   width: 600px;
   height: 250px;
@@ -152,6 +150,30 @@
   font-weight: bold;
   color: white;
   font-size: 30px;
+}
+
+.mainInfo {
+  width: 660px;
+  line-height: 2;
+  background-color: #cacaca;
+  display: block;
+  padding: 20px;
+}
+
+.mainInfo .description {
+  font-size: x-large;
+}
+
+.mainInfo .storyImage {
+  float: left;
+  margin: 0 20px 5px 0;
+}
+
+.mainInfo .bold {
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 5px;
 }
 
 .blog {
@@ -233,6 +255,7 @@ html, body, #root, .App {
   border-bottom: 1px solid black;
   background-color: inherit;
   overflow: hidden;
+  margin-top: 0;
 }
 
 .navBar .logo {

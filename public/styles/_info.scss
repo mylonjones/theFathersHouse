@@ -8,10 +8,7 @@
   font-size: x-large;
 }
 
-.mainInfo {
-  width: 700px;
-  height: 300px;
-}
+
 
 .subInfo {
   width: 600px;
@@ -52,5 +49,26 @@
   }
 }
 
+.mainInfo {
+  width: 660px;
+  line-height: 2;
+  background-color: #cacaca;
+  display: block;
+  padding: 20px;
+
+  .description {
+    font-size: x-large;
+  }
+  .storyImage {
+    float: left;
+    margin: 0 20px 5px 0;
+  }
+  .bold {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+}
 
 

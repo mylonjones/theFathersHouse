@@ -55,8 +55,17 @@ export default function Home() {
     <div className='home space'>
 
       <div className='titleContainer'>
-        <div className='title'>The Father's House</div>
+        <div className='transparant' >
+          <div className='title'>The Father's House</div>
+          <div className='subTitle'>Rosamond, CA</div>
+        </div>
       </div>
+
+      <div className='basicInfo' >
+          Come join us Sunday from 8:30 to 9:45 am
+          <br/>
+          We are located at 2850 B sreet Rosamond Ca, 93560
+        </div>
 
       <div className='welcomeVideo' >
         <iframe
@@ -68,7 +77,7 @@ export default function Home() {
 
       <div className='signUp'>
 
-        <div>Click here to sigh up for our news letter!</div>
+        <div>Click here to sign up for our news letter!</div>
         <button className='signUpButton' onClick={showDialog} >Sign Up!</button>
 
         <div className='grayout modal' onClick={closeDialog} ></div>
