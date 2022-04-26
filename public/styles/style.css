@@ -228,6 +228,69 @@
   width: 20vw;
 }
 
+.mediaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #cacaca;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.mediaDisplay {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.search {
+  margin: 10px 0;
+}
+
+.mediaHeader {
+  width: 640px;
+}
+
+.mediaHeader .bold {
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+}
+
+.snippetDisplay {
+  overflow-y: scroll;
+  height: 500px;
+  max-width: 260px;
+}
+
+.snippetDisplay .snippetContainer {
+  padding: 20px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  width: 200px;
+}
+
+.snippetDisplay .snippetContainer .snippet {
+  width: 100%;
+}
+
+.videoContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.videoContainer .video {
+  border: none;
+  width: 640px;
+  height: 360px;
+  margin: auto;
+}
+
 html, body, #root, .App {
   height: 100%;
   width: 100%;
