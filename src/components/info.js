@@ -13,7 +13,7 @@ export default function Info() {
       <div className='infoMessage' >Learn about our church and leaders!</div>
       <div>
 
-        <div className='mainInfo split'>
+        <div id='about' className='mainInfo split'>
           <img
             className='storyImage'
             src='photos/churchPeople.jpeg'
@@ -23,7 +23,7 @@ export default function Info() {
             {lorem.generateParagraphs(3)}
         </div>
 
-        <div className='basicInfo' >
+        <div id='times' className='basicInfo' >
           We are located at 2850 B sreet Rosamond Ca, 93560
           <br/>
           Services are Sunday from 8:30 to 9:45 am
@@ -35,7 +35,7 @@ export default function Info() {
           Follow us on Face Book: The Father's House
         </div>
 
-        <div className='subInfo split'>
+        <div id='pastors' className='subInfo split'>
           <img
             className='photo'
             src='photos/couple.jpeg'

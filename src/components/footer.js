@@ -34,7 +34,7 @@ export default function Footer() {
 
   return(
     <div className='footer'>
-      <ul>
+      <ul className='contact'>
         <div {...mouseHandlers(email)} >contact@thefathershouse.com
           <button
             ref={email}
@@ -50,6 +50,15 @@ export default function Footer() {
             >Copy</button>
         </div>
       </ul>
+      <div className='footerLinks'>
+        <div className='footerLink' onClick={()=> {window.location.replace("/#signUp")}} >News Letter</div>
+        <div className='footerLink' onClick={()=> {window.location.replace("/info#times")}} >Service Times</div>
+        <div className='footerLink' onClick={()=> {window.location.replace("/ministries#ministries")}} >Ministries</div>
+        <div className='footerLink' onClick={()=> {window.location.replace("/ministries#ministries")}} >Events</div>
+        <div className='footerLink' onClick={()=> {window.location.replace("/info#pastors")}} >Pastors</div>
+        <div className='footerLink' onClick={()=> {window.location.replace("info#about")}} >About</div>
+      </div>
+
     </div>
   )
 }

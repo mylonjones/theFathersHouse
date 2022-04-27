@@ -21,7 +21,11 @@ export default function Ministries() {
 
   return (
     <div className='space'>
-      <div className='ministryList'>
+      <div className='participationHeader'>
+        <div className='bold' >Welcome to our participation page</div>
+        <div className='participationInvite' >Learn about our ministry opportunities and upcoming events</div>
+      </div>
+      <div id='ministries' className='ministryList'>
         {allMinistries && allMinistries.map(ministry => {
           return (
             <div className='mainInfo split' >

@@ -75,7 +75,7 @@ export default function Home() {
         ></iframe>
       </div>
 
-      <div className='signUp'>
+      <div id='signUp' className='signUp'>
 
         <div>Click here to sign up for our news letter!</div>
         <button className='signUpButton' onClick={showDialog} >Sign Up!</button>
