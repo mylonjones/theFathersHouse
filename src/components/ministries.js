@@ -9,7 +9,7 @@ export default function Ministries() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "ministry"]{
+        `*[_type == "ministry"] | order(publishedAt) {
           title,
           description,
           body

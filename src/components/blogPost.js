@@ -27,9 +27,8 @@ export default function BlogPost() {
               url
              }
            },
-         body,
-        "name": author->name,
-        "authorImage": author->image
+          body,
+          "name": author->name
        }`,
         { slug }
       )

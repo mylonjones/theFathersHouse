@@ -25,6 +25,16 @@ export default {
     },
   ],
 
+  orderings: [
+    {
+      title: 'date',
+      name: 'date',
+      by: [
+        {field: 'publishedAt', diresction: 'desc'}
+      ]
+    }
+  ],
+
   preview: {
     select: {
       title: 'title'

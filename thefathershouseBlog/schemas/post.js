@@ -49,11 +49,21 @@ export default {
     },
   ],
 
+  orderings: [
+    {
+      title: 'date',
+      name: 'date',
+      by: [
+        {field: 'publishedAt', diresction: 'desc'}
+      ]
+    }
+  ],
+
   preview: {
     select: {
       title: 'title',
       author: 'author.name',
-      media: 'mainImage',
+      media: 'mainImage'
     },
     prepare(selection) {
       const {author} = selection
