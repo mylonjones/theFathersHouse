@@ -104,6 +104,7 @@ class Media extends React.Component {
             </form>
           </div>
           <div className='videoContainer' >
+            <div>{this.state.currentVideo && this.state.currentVideo.description}</div>
             <iframe
               className='video'
               title='exercise'
