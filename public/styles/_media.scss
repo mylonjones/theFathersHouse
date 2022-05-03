@@ -49,3 +49,38 @@
     margin: auto;
   }
 }
+
+@media (max-width: 880px) {
+  .mediaContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #cacaca;
+    width: 680px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .snippetDisplay {
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: calc(100% - 20px);
+    overflow-y: auto;
+    height: auto;
+    max-width: initial;
+    padding: 10px;
+    .snippetContainer {
+      padding: 10px;
+      transition: transform 1s;
+      width: 200px;
+      display: inline-block;
+      .snippet {
+        width: 100%;
+      }
+    }
+  }
+
+  .mediaDisplay {
+    padding: 20px;
+  }
+
+}

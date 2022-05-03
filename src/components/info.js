@@ -10,7 +10,7 @@ const lorem = new LoremIpsum({
 export default function Info() {
   return (
     <div className='space'>
-      <div className='infoMessage' >Learn about our church and leaders!</div>
+      <div className='header bold' >Learn about our church and leaders!</div>
       <div>
 
         <div id='about' className='mainInfo split'>

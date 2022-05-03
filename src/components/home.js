@@ -61,11 +61,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='basicInfo' >
-          Come join us Sunday from 8:30 to 9:45 am
-          <br/>
-          We are located at 2850 B sreet Rosamond Ca, 93560
-        </div>
+      <div className='header' >
+        Come join us Sunday from 8:30 to 9:45 am
+        <br/>
+        We are located at 2850 B sreet Rosamond Ca, 93560
+      </div>
 
       <div className='welcomeVideo' >
         <iframe

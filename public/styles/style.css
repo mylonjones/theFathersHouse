@@ -178,6 +178,9 @@
 
 .blog {
   background-color: #cacaca;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
 }
 
 .blog .blogHeading {
@@ -215,7 +218,11 @@
 }
 
 .blogDisplay {
-  padding: 30px;
+  padding: 10px;
+  margin-left: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
   background-color: #cacaca;
 }
 
@@ -226,6 +233,15 @@
 
 .previewImage {
   width: 20vw;
+}
+
+.blogAlign {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr 2fr;
+      grid-template-columns: 7fr 2fr;
+      grid-template-areas: 'left right';
+  margin-bottom: 50px;
 }
 
 .mediaContainer {
@@ -291,7 +307,47 @@
   margin: auto;
 }
 
-.participationHeader {
+@media (max-width: 880px) {
+  .mediaContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #cacaca;
+    width: 680px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .snippetDisplay {
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: calc(100% - 20px);
+    overflow-y: auto;
+    height: auto;
+    max-width: initial;
+    padding: 10px;
+  }
+  .snippetDisplay .snippetContainer {
+    padding: 10px;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    width: 200px;
+    display: inline-block;
+  }
+  .snippetDisplay .snippetContainer .snippet {
+    width: 100%;
+  }
+  .mediaDisplay {
+    padding: 20px;
+  }
+}
+
+.header {
   background-color: white;
   padding: 30px;
   text-align: center;

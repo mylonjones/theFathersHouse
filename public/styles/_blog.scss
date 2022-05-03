@@ -1,6 +1,7 @@
 
 .blog {
   background-color: #cacaca;
+  grid-area: left;
   .blogHeading {
     display: flex;
     margin: 20px 15px;
@@ -32,7 +33,9 @@
 }
 
 .blogDisplay {
-  padding: 30px;
+  padding: 10px;
+  margin-left: 20px;
+  grid-area: right;
   background-color: #cacaca;
 }
 
@@ -43,4 +46,11 @@
 
 .previewImage {
   width: 20vw;
+}
+
+.blogAlign {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  grid-template-areas: 'left right';
+  margin-bottom: 50px;
 }

@@ -21,7 +21,7 @@ export default function Ministries() {
 
   return (
     <div className='space'>
-      <div className='participationHeader'>
+      <div className='header'>
         <div className='bold' >Welcome to our participation page</div>
         <div className='participationInvite' >Learn about our ministry opportunities and upcoming events</div>
       </div>
