@@ -38,6 +38,8 @@ html, body, #root, .App {
   .logo {
     float: left;
     padding: 10px;
+    height: 60px;
+    width: 60px;
   }
   .navLinks {
     display: flex;
@@ -60,7 +62,7 @@ html, body, #root, .App {
 .footer {
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 20px;
   font-weight: bold;
   font-size: large;
   width: 100%;
@@ -88,4 +90,92 @@ html, body, #root, .App {
   }
 }
 
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.bold {
+  font-size: 30px
+}
+
+@media (max-width: 500px) {
+  .navBar {
+    border-bottom: 1px solid black;
+    background-color: inherit;
+    overflow: hidden;
+    margin-top: 0;
+    .logo {
+      float: left;
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+    }
+    .navLinks {
+      display: flex;
+      justify-content: flex-end;
+      .navLink {
+        color: inherit;
+        margin-top: 3vw;
+        float: right;
+        text-align: center;
+        padding: 14px 6px;
+        text-decoration: none;
+        font-size: 4.5vw;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: auto;
+    margin: 0px auto
+  }
+
+  .bold {
+    font-size: 30px
+  }
+
+  .footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    font-size: large;
+    width: auto;
+    position: fixed;
+    bottom: 0px;
+    .copyButton {
+      visibility: hidden;
+      margin-left: 5px;
+    }
+    .contact {
+      float: none;
+    }
+    .footerLinks {
+      display: block;
+      font-size: small;
+      gap: 15px;
+      text-decoration: underline;
+      padding: 0;
+      .footerLink {
+        cursor: pointer;
+        float: left;
+        text-decoration: underline;
+        margin-right: 10px;
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+}
 

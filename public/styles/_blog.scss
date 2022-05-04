@@ -29,14 +29,18 @@
 }
 
 .previewTitle {
-  color: black;
+  text-decoration: underline;
+  color: #4e3131;
+  &:hover {
+    color: gray;
+  }
 }
 
 .blogDisplay {
   padding: 10px;
   margin-left: 20px;
   grid-area: right;
-  background-color: #cacaca;
+  background-color: white;
 }
 
 .blogPostTitle {

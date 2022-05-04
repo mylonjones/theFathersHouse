@@ -71,13 +71,13 @@ export default function Home() {
         <iframe
         className='video'
         title='welcome'
-        src={`//www.youtube.com/embed/RSe4mjqmwsQ`}
+        src={`https://www.youtube.com/embed/RSe4mjqmwsQ`}
         ></iframe>
       </div>
 
       <div id='signUp' className='signUp'>
 
-        <div>Click here to sign up for our news letter!</div>
+        <div>Click here to sign up for our email newsletter!</div>
         <button className='signUpButton' onClick={showDialog} >Sign Up!</button>
 
         <div className='grayout modal' onClick={closeDialog} ></div>

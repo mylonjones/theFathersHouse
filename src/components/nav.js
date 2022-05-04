@@ -8,8 +8,6 @@ export default function Nav() {
         className='logo'
         src='photos/logo.png'
         alt='logo'
-        height='60'
-        width='60'
       />
       <div className='navLinks' >
         <Link className='navLink' to='/'>Home</Link>

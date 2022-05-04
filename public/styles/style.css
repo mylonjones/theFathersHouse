@@ -94,6 +94,96 @@
   gap: 20px;
 }
 
+@media (max-width: 500px) {
+  .welcomeVideo {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 20px 0;
+    margin: 20px auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .welcomeVideo .video {
+    border: none;
+    width: 90vw;
+    height: 50vw;
+    margin: auto;
+  }
+  .titleContainer {
+    background-image: url("../photos/church.jpeg");
+    background-repeat: no-repeat;
+    padding: 8vw 0;
+    width: 100%;
+    background-size: 100%;
+    background-position: center bottom -35px;
+    margin-bottom: 25px;
+  }
+  .titleContainer .transparant {
+    text-align: center;
+    padding: 17px;
+    background-color: rgba(204, 204, 204, 0.57);
+    color: black;
+  }
+  .titleContainer .transparant .title {
+    font-size: 8vw;
+    font-weight: bold;
+  }
+  .titleContainer .transparant .subTitle {
+    font-size: 5vw;
+  }
+  .signUp {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 30px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .signUp .signUpButton {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .signUp .modal {
+    display: none;
+  }
+  .signUp .show {
+    display: block;
+  }
+  .signUp .grayout {
+    z-index: 1;
+    background: rgba(128, 128, 128, 0.527);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    right: 0;
+    overflow-y: hidden;
+  }
+  .signUp .signUpForm {
+    z-index: 2;
+    position: fixed;
+    bottom: 50%;
+    right: calc(50% - 166px);
+    background-color: white;
+    padding: 14px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 300px;
+  }
+  .signUp .signUpForm .signUpSubmission {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .infoMessage {
   text-align: center;
   background-color: white;
@@ -214,7 +304,12 @@
 }
 
 .previewTitle {
-  color: black;
+  text-decoration: underline;
+  color: #4e3131;
+}
+
+.previewTitle:hover {
+  color: gray;
 }
 
 .blogDisplay {
@@ -223,7 +318,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: right;
-  background-color: #cacaca;
+  background-color: white;
 }
 
 .blogPostTitle {
@@ -347,18 +442,6 @@
   }
 }
 
-.header {
-  background-color: white;
-  padding: 30px;
-  text-align: center;
-  width: 60%;
-  margin: 30px auto;
-}
-
-.bold {
-  font-size: 30px;
-}
-
 .ministryList {
   border-top: 1px solid black;
 }
@@ -397,6 +480,8 @@ html, body, #root, .App {
 .navBar .logo {
   float: left;
   padding: 10px;
+  height: 60px;
+  width: 60px;
 }
 
 .navBar .navLinks {
@@ -425,7 +510,7 @@ html, body, #root, .App {
 .footer {
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 20px;
   font-weight: bold;
   font-size: large;
   width: 100%;
@@ -458,5 +543,95 @@ html, body, #root, .App {
 
 .footer .footerLinks .footerLink:hover {
   color: gray;
+}
+
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.bold {
+  font-size: 30px;
+}
+
+@media (max-width: 500px) {
+  .navBar {
+    border-bottom: 1px solid black;
+    background-color: inherit;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .navBar .logo {
+    float: left;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .navBar .navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navBar .navLinks .navLink {
+    color: inherit;
+    margin-top: 3vw;
+    float: right;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+    font-size: 4.5vw;
+  }
+  .navBar .navLinks .navLink:hover {
+    color: black;
+  }
+  .header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: auto;
+    margin: 0px auto;
+  }
+  .bold {
+    font-size: 30px;
+  }
+  .footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    font-size: large;
+    width: auto;
+    position: fixed;
+    bottom: 0px;
+  }
+  .footer .copyButton {
+    visibility: hidden;
+    margin-left: 5px;
+  }
+  .footer .contact {
+    float: none;
+  }
+  .footer .footerLinks {
+    display: block;
+    font-size: small;
+    gap: 15px;
+    text-decoration: underline;
+    padding: 0;
+  }
+  .footer .footerLinks .footerLink {
+    cursor: pointer;
+    float: left;
+    text-decoration: underline;
+    margin-right: 10px;
+  }
+  .footer .footerLinks .footerLink:hover {
+    color: gray;
+  }
 }
 /*# sourceMappingURL=style.css.map */

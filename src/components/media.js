@@ -108,7 +108,7 @@ class Media extends React.Component {
             <iframe
               className='video'
               title='exercise'
-              src={`//www.youtube.com/embed/${this.state.currentVideo && this.state.currentVideo.id}`}
+              src={`https://www.youtube.com/embed/${this.state.currentVideo && this.state.currentVideo.id}`}
             ></iframe>
           </div>
         </div>

@@ -34,7 +34,7 @@ export default function Footer() {
 
   return(
     <div className='footer'>
-      <ul className='contact'>
+      <div className='contact'>
         <div {...mouseHandlers(email)} >contact@thefathershouse.com
           <button
             ref={email}
@@ -49,7 +49,7 @@ export default function Footer() {
             {...clickHandler('1-234-567-8910')}
             >Copy</button>
         </div>
-      </ul>
+      </div>
       <div className='footerLinks'>
         <div className='footerLink' onClick={()=> {window.location.replace("/#signUp")}} >News Letter</div>
         <div className='footerLink' onClick={()=> {window.location.replace("/info#times")}} >Service Times</div>
