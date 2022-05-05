@@ -95,22 +95,27 @@ class Media extends React.Component {
             <div className='bold'>Welcome to our media page</div>
             <div>Check out our most recent services or search for something specific</div>
           </div>
-          <div className='search' >
-            <form onSubmit={this.searchHandler} >
-              <label>
-                <input type='text' autoComplete='off' name='query' value={this.state.query} onChange={this.changeHandler}  />
-              </label>
-              <input type='submit' value='search' />
-            </form>
+
+          <div className='videoPosition'>
+            <div className='search' >
+              <form onSubmit={this.searchHandler} >
+                <label>
+                  <input type='text' autoComplete='off' name='query' value={this.state.query} onChange={this.changeHandler}  />
+                </label>
+                <input type='submit' value='search' />
+              </form>
+            </div>
+
+            <div className='videoContainer' >
+              <div>{this.state.currentVideo && this.state.currentVideo.description}</div>
+              <iframe
+                className='video'
+                title='exercise'
+                src={`https://www.youtube.com/embed/${this.state.currentVideo && this.state.currentVideo.id}`}
+              ></iframe>
+            </div>
           </div>
-          <div className='videoContainer' >
-            <div>{this.state.currentVideo && this.state.currentVideo.description}</div>
-            <iframe
-              className='video'
-              title='exercise'
-              src={`https://www.youtube.com/embed/${this.state.currentVideo && this.state.currentVideo.id}`}
-            ></iframe>
-          </div>
+
         </div>
         <div className='snippetDisplay'>
           {this.state.videos.map((video, index)=>{

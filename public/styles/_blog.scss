@@ -58,3 +58,32 @@
   grid-template-areas: 'left right';
   margin-bottom: 50px;
 }
+
+@media (max-width: 500px) {
+  .blog {
+    .blogHeading {
+      flex-direction: column-reverse;
+      padding: 15px 0px 20px;
+
+      .blogImage {
+        width: 87vw;
+      }
+      .blogTitle {
+        margin: 0;
+      }
+      .blogAuthor {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .blogDisplay {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .blogAlign {
+    display: initial;
+    margin-bottom: 20px;
+  }
+}
