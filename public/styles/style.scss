@@ -59,6 +59,18 @@ html, body, #root, .App {
   }
 }
 
+.header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.bold {
+  font-size: 30px
+}
+
 .footer {
   background-color: white;
   color: black;
@@ -90,118 +102,59 @@ html, body, #root, .App {
   }
 }
 
-.header {
-  background-color: white;
-  padding: 30px;
-  text-align: center;
-  width: 60%;
-  margin: 30px auto;
-}
-
-.bold {
-  font-size: 30px
-}
 
 @media (max-width: 500px) {
 
   html, body, #root, .App {
     height: auto;
-    width: 100%;
-    margin: 0;
-    background-color: #f7f2ea;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #4e3131;
-    scroll-behavior: smooth;
   }
 
   .App {
-    position: relative;
     padding-bottom: 0;
-    height: fit-content;
-
   }
 
   .space {
-    width: 95%;
-    margin: auto;
     margin-top: 80px;
   }
 
   .navBar {
-    border-bottom: 1px solid black;
-    background-color: #f7f2eaf7;
-    overflow: hidden;
     margin-top: 0;
     position: fixed;
     padding: 0 2.5%;
     top: 0;
     .logo {
-      float: left;
-      padding: 10px;
       height: 40px;
       width: 40px;
     }
     .navLinks {
-      display: flex;
-      justify-content: flex-end;
       .navLink {
-        color: inherit;
         margin-top: 3vw;
-        float: right;
-        text-align: center;
         padding: 14px 6px;
-        text-decoration: none;
         font-size: 4.5vw;
-        &:hover {
-          color: black;
-        }
       }
     }
   }
 
   .header {
-    background-color: white;
     padding: 20px;
-    text-align: center;
     width: auto;
     margin: 20px auto
   }
 
-  .bold {
-    font-size: 30px
-  }
-
   .footer {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    font-weight: bold;
-    font-size: large;
     width: auto;
     position: initial;
-    bottom: 0px;
-    .copyButton {
-      visibility: hidden;
-      margin-left: 5px;
-    }
     .contact {
       float: none;
     }
     .footerLinks {
       display: block;
-      font-size: small;
-      gap: 15px;
-      text-decoration: underline;
       padding: 0;
       height: 36px;
       .footerLink {
-        cursor: pointer;
         float: left;
         text-decoration: underline;
         margin-right: 10px;
-        &:hover {
-          color: gray;
-        }
       }
     }
   }

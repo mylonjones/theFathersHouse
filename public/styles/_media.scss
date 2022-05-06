@@ -18,10 +18,6 @@
   }
 }
 
-.search {
-
-}
-
 .mediaHeader {
   width: 640px;
   .bold {
@@ -32,7 +28,6 @@
 }
 
 .snippetDisplay {
-  // background-color: #cacaca;
   overflow-y: scroll;
   height: 500px;
   max-width: 260px;
@@ -99,13 +94,25 @@
 
 @media (max-width: 500px) {
   .mediaContainer {
-    display: flex;
     flex-direction: column;
-    background-color: #cacaca;
     width: 95%;
-    margin: auto;
     margin-top: 75px;
     margin-bottom: 20px
+  }
+
+  .mediaDisplay {
+    padding: 10px;
+    padding-bottom: 0;
+    .videoPosition {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .mediaHeader {
+    width: auto;
+    .bold {
+      font-size: 23px;
+    }
   }
 
   .snippetDisplay {
@@ -119,45 +126,15 @@
     margin: auto;
     .snippetContainer {
       padding: 10px;
-      transition: transform 1s;
       width: auto;
       display: inline-block;
-      .snippet {
-        width: 100%;
-      }
-    }
-  }
-
-  .mediaDisplay {
-    padding: 10px;
-    padding-bottom: 0;
-    .videoPosition {
-      margin: 10px 0;
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 10px;
-    }
-  }
-
-  .search {
-  }
-
-  .mediaHeader {
-    width: auto;
-    .bold {
-      font-weight: bold;
-      color: white;
-      font-size: 23px;
     }
   }
 
   .videoContainer {
-    width: fit-content;
     .video {
-      border: none;
       width: 90vw;
       height: 50vw;
-      margin: auto;
     }
   }
 }
